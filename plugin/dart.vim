@@ -10,7 +10,7 @@ set cpo&vim
 function! s:FormatOnSave()
   " Dart code formatting on save
   if get(g:, "dart_format_on_save", 0)
-    call dart#fmt("--line-length 320")
+    call dart#fmt("--line-length 128")
   endif
 endfunction
 
